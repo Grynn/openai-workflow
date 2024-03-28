@@ -5,7 +5,7 @@ If I get time (or sponsorship) will merge this back into the ChatGPT workflow.
 
 ## Install
 
-Download from releases.
+Download from [releases.](https://github.com/Grynn/openai-workflow/releases)
 
 ## Setup
 
