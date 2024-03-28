@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.alfredapp.vitor.openai</string>
+	<string>com.alfredapp.grynn.groq</string>
 	<key>connections</key>
 	<dict>
 		<key>009F4B0B-7B7E-455F-9EA7-51334DBA92F1</key>
@@ -381,13 +381,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Vítor Galvão</string>
+	<string>Vishal Doshi</string>
 	<key>description</key>
-	<string>OpenAI integrations</string>
+	<string>LLM integrations</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>ChatGPT / DALL-E</string>
+	<string>Groq</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -891,7 +891,7 @@ function run() {
 				<key>subtext</key>
 				<string>↩ Continue chat · ⌘↩ Force start a new chat</string>
 				<key>text</key>
-				<string>Ask ChatGPT</string>
+				<string>Ask Mixtral (Groq)</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -1036,8 +1036,8 @@ function run() {
 	<key>readme</key>
 	<string>## Setup
 
-1. Create an OpenAI account and [log in](https://platform.openai.com/login?launch).
-2. On the [API keys page](https://platform.openai.com/api-keys), click `+ Create new secret key`.
+1. Create an Groq account and [log in](https://groq.com).
+2. On the [API keys page](https://console.groq.com/keys), click `+ Create new secret key`.
 3. Name your new secret key and click `Create secret key`.
 4. Copy your secret key and add it to the [Workflow’s Configuration](https://www.alfredapp.com/help/workflows/user-configuration/).
 
@@ -1045,7 +1045,7 @@ function run() {
 
 ## Usage
 
-Query ChatGPT via the `chatgpt` keyword.
+Query Groq via the `q` keyword.
 
 ![Start ChatGPT query](images/about/chatgptkeyword.png)
 
@@ -1293,7 +1293,7 @@ Query DALL·E via the `dalle` keyword.
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>chatgpt</string>
+				<string>q</string>
 				<key>placeholder</key>
 				<string></string>
 				<key>required</key>
@@ -1314,7 +1314,7 @@ Query DALL·E via the `dalle` keyword.
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gpt-3.5-turbo</string>
+				<string>mixtral-8x7b-32768</string>
 				<key>pairs</key>
 				<array>
 					<array>
@@ -1328,6 +1328,10 @@ Query DALL·E via the `dalle` keyword.
 					<array>
 						<string>GPT-4 Turbo (preview)</string>
 						<string>gpt-4-turbo-preview</string>
+					</array>
+					<array>
+						<string>Mixtral 8x7b</string>
+						<string>mixtral-8x7b-32768</string>
 					</array>
 				</array>
 			</dict>
@@ -1529,11 +1533,15 @@ Query DALL·E via the `dalle` keyword.
 	<key>variables</key>
 	<dict>
 		<key>chatgpt_api_endpoint</key>
+		<string>https://api.groq.com/openai</string>
+		<key>dalle_api_endpoint</key>
 		<string>https://api.openai.com</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>2024.5</string>
+	<string>2024.1</string>
 	<key>webaddress</key>
-	<string>https://github.com/alfredapp/openai-workflow/</string>
+	<string>https://github.com/Grynn/openai-workflow</string>
 </dict>
 </plist>
