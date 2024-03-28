@@ -1,8 +1,11 @@
-# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> ChatGPT / DALL-E Alfred Workflow
+# <img src='Workflow/icon.png' width='45' align='center' alt='icon'> Forked ChatGPT Workflow for use with Groq/Mixtral
 
-OpenAI integrations
+Why? 10x faster. Like a lot, lot faster which makes it super fun.
+If I get time (or sponsorship) will merge this back into the ChatGPT workflow.
 
-[⤓ Install on the Alfred Gallery](https://alfred.app/workflows/alfredapp/openai)
+## Install
+
+Download from releases.
 
 ## Setup
 
